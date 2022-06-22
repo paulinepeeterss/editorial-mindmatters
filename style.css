@@ -1,0 +1,795 @@
+:root {
+  --color-black: #000;
+  --color-blue: #2878C8;
+  --color-red: #d12d3d;
+  --color-orange:#FF7828;
+  --color-pink: #df4578;
+  --color-blue-green: #1E8278;
+  --color-green: #78B432;
+  --color-purple: #6E32A0;
+  --padding: 20px;
+}
+
+@media (max-width: 950px) {
+  :root {
+    --padding: 10px;    
+  }
+}
+
+/* JUBILAT FONT */
+@font-face {
+  font-family: "jubilat-regualr";
+  src: url(fonts/JubilatRegular.woff) format('woff');
+}
+
+/* EFFRA FONT */
+@font-face {
+  font-family: "effra-light";
+  src: url(fonts/Effra_Std_Lt.woff) format('woff');
+}
+
+.text-effra-light {
+  font-family: 'effra-light';
+}
+
+@font-face {
+  font-family: "effra-regular";
+  src: url(fonts/Effra_Std_Rg.woff) format('woff');
+}
+
+.text-effra-regular {
+  font-family: 'effra-regular';
+}
+
+@font-face {
+  font-family: "effra-bold";
+  src: url(fonts/Effra\ Bold.woff) format('woff');
+}
+
+.text-effra-bold {
+  font-family: 'effra-bold';
+}
+
+body {
+  margin: 0;
+
+  font-family: 'jubilat-regular';
+
+  font-size: 20px;
+  color: var(--color-black);
+}
+
+body .article {
+  padding-bottom: 20px;
+}
+
+/* HOMEPAGE */
+.grid {
+  margin-top: 0;
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 950px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.grid > a {
+  min-height: 300px;
+  padding: var(--padding);
+  color: black;
+  text-decoration: none;
+}
+
+@media (max-width: 950px) {
+  .grid > a {
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 500px) {
+  .grid > a {
+    min-height: 60px; 
+  }
+}
+
+.grid > a > h2,
+.grid > a > h4 {
+  margin-left: 0;
+}
+
+/* NEW */
+.new {
+  min-height: 300px;
+  padding-top: var(--padding);
+  padding-right: var(--padding);
+  background-color: var(--color-blue-green);
+  color: var(--color-black);
+}
+
+@media (max-width: 950px) {
+  .new {
+    min-height: 200px;
+    grid-column: 1 / 3;    
+  }
+}
+
+@media (max-width: 500px) {
+  .new {
+    grid-column: 1 / 2;
+    grid-row: auto;
+
+    min-height: 60px;
+  }
+}
+
+/* LOGO */
+.logo {
+  grid-column: 1 / 3;
+
+  padding: var(--padding);
+}
+
+@media (max-width: 500px) {
+  .logo {
+    grid-column: 1/ 2;
+  }
+}
+
+.logo-home {
+  width: 100%;
+}
+
+
+@media (max-width: 950px) {
+  .logo-home {
+    width: 50%;
+    }
+  }  
+
+@media (max-width: 500px) {
+.logo-home {
+  width: 30%;
+  }
+}
+
+/* NAVIGATION */
+nav {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+} 
+
+nav a {
+  margin-left: 40px;
+  color: var(--color-black);
+  text-decoration: none;
+  
+  line-height: 1;
+}
+
+nav a strong {
+  display: block;
+}
+
+.nav-logo {
+  margin-left: 0;
+
+  max-width: 80px;
+  margin-right: auto;
+}
+
+.nav-logo-section {
+  width: 100%;
+  height: auto;
+}
+
+a:hover {
+  transform: scale(.99, .99);
+  text-decoration: none;
+}
+
+a:after {
+  color: var(--color-black);
+  text-decoration: none;
+}
+
+/* DEPRESSION */
+.red {
+  background-color: var(--color-red);
+}
+
+.depression {
+  background: var(--color-red);
+
+  top: 0;
+  width: 100%;
+}
+
+.tips-depression {
+  padding-top: 0.5px;
+
+  background: var(--color-red);
+}
+
+.text-jubilat-regular-red {
+  font-family: 'jubilat-regular';
+
+  color: var(--color-red);
+  font-weight: 200;
+}
+
+.text-jubilat-bold-red {
+  font-family: 'jubilat-regular';
+
+  color: var(--color-red);  font-weight: 600;
+}
+
+.text-effra-light-red {
+  font-family: 'effra-light';
+  color: var(--color-red);}
+
+.text-effra-regular-red {
+  font-family: 'effra-regular';
+  color: var(--color-red);
+}
+
+.text-effra-bold-red {
+  font-family: 'effra-bold';
+  color: var(--color-red);
+}
+
+/* GAD */
+.blue{
+  background-color: var(--color-blue);
+}
+
+.gad {
+  background: var(--color-blue);
+
+  top: 0;
+  width: 100%;
+}
+
+.tips-gad {
+  padding-top: 0.5px;
+
+  background: var(--color-blue);
+}
+
+.text-jubilat-regular-blue {
+  font-family: 'jubilat-regular';
+
+  color: var(--color-blue);
+  font-weight: 200;
+
+}
+
+.text-jubilat-bold-blue {
+  font-family: 'jubilat-regular';
+
+  color: var(--color-blue);
+  font-weight: 600;
+}
+
+.text-effra-light-blue {
+  font-family: 'effra-light';
+  color: var(--color-blue);
+}
+
+.text-effra-regular-blue {
+  font-family: 'effra-regular';
+  color: var(--color-blue);
+}
+
+.text-effra-bold-blue {
+  font-family: 'effra-bold';
+  color: var(--color-blue);
+}
+
+/* SELF HARM */
+.orange {
+  background-color: var(--color-orange);
+}
+
+.selfharm {
+  background: var(--color-orange);
+
+  top: 0;
+  width: 100%;
+}
+
+.tips-selfharm {
+  padding-top: 0.5px;
+  
+  background: var(--color-orange);
+}
+
+.text-jubilat-regular-orange {
+  font-family: 'jubilat-regular';
+
+  color: var(--color-orange);
+  font-weight: 200;
+}
+
+.text-jubilat-bold-orange {
+  font-family: 'jubilat-regular';
+
+  color: var(--color-orange);  
+  font-weight: 600;
+}
+
+.text-effra-light-orange {
+  font-family: 'effra-light';
+  color: var(--color-orange);}
+
+.text-effra-regular-orange {
+  font-family: 'effra-regular';
+  color: var(--color-orange);
+}
+
+.text-effra-bold-orange {
+  font-family: 'effra-bold';
+  color: var(--color-orange);
+}
+
+/* ANOREXIA */
+.pink {
+  background-color: var(--color-pink);
+}
+
+.anorexia {
+  background: var(--color-pink);
+
+  top: 0;
+  width: 100%;
+}
+
+.tips-anorexia {
+  padding-top: 0.5px;
+
+  background: var(--color-pink);
+}
+
+.text-jubilat-regular-pink {
+  font-family: 'jubilat-regular';
+
+  color: var(--color-pink);
+  font-weight: 200;
+}
+
+.text-jubilat-bold-pink {
+  font-family: 'jubilat-regular';
+
+  color: var(--color-pink);  
+  font-weight: 600;
+}
+
+.text-effra-light-pink {
+  font-family: 'effra-light';
+  color: var(--color-pink);}
+
+.text-effra-regular-pink {
+  font-family: 'effra-regular';
+  color: var(--color-pink);
+}
+
+.text-effra-bold-pink {
+  font-family: 'effra-bold';
+  color: var(--color-pink);
+}
+
+/* PTSD */
+.green {
+  background-color: var(--color-green);
+}
+
+.ptsd {
+  background: var(--color-green);
+
+  top: 0;
+  width: 100%;
+}
+
+.tips-ptsd {
+  padding-top: 0.5px;
+  
+  background: var(--color-green);
+}
+
+.text-jubilat-regular-green {
+  font-family: 'jubilat-regular';
+
+  color: var(--color-green);
+  font-weight: 200;
+}
+
+.text-jubilat-bold-green {
+  font-family: 'jubilat-regular';
+
+  color: var(--color-green);  
+  font-weight: 600;
+}
+
+.text-effra-light-green {
+  font-family: 'effra-light';
+  color: var(--color-green);}
+
+.text-effra-regular-green {
+  font-family: 'effra-regular';
+  color: var(--color-green);
+}
+
+.text-effra-bold-green {
+  font-family: 'effra-bold';
+  color: var(--color-green);
+}
+
+/* BULLIMIA */
+.purple {
+  background-color: var(--color-purple);
+}
+
+.bullimia {
+  background: var(--color-purple);
+
+  top: 0;
+  width: 100%;
+}
+
+.tips-bullimia {
+  padding-top: 0.5px;
+  
+  background: var(--color-purple);
+}
+
+.text-jubilat-regular-purple {
+  font-family: 'jubilat-regular';
+
+  color: var(--color-purple);
+  font-weight: 200;
+}
+
+.text-jubilat-bold-purple {
+  font-family: 'jubilat-regular';
+
+  color: var(--color-purple);  
+  font-weight: 600;
+}
+
+.text-effra-light-purple {
+  font-family: 'effra-light';
+  color: var(--color-purple);}
+
+.text-effra-regular-purple {
+  font-family: 'effra-regular';
+  color: var(--color-purple);
+}
+
+.text-effra-bold-purple {
+  font-family: 'effra-bold';
+  color: var(--color-purple);
+}
+
+/* BASIC TEXT */
+h1 {
+  margin: 0px 0px 0px 20px;
+
+  font-size: 48px;
+}
+
+/* large desktops */
+@media screen and (min-width: 1720px) and (max-width: 1920px) {
+  h1 {
+    font-size: 60px;
+  }
+}
+
+h2 {
+  margin: 0px 0px 0px 20px;
+  padding-top: 40px;
+  padding-bottom: var(--padding);
+
+  font-size: 32px;
+}
+
+.grid h2{
+  padding-top: var(--padding);
+}
+
+/* large desktops */
+@media screen and (min-width: 1720px) and (max-width: 1920px) {
+  h2 {
+    font-size: 48px;
+  }
+}
+
+h3 {
+  margin: 0px 0px 0px 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  
+  font-size: 28px;
+
+  grid-column: 2 / 5;
+  grid-row: 3 / 4;
+}
+
+@media (max-width: 950px) {
+  h3 {
+    grid-column: 1 / 3;
+    grid-row: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  h3 {
+    grid-column: 1 / 2;
+  }
+}
+
+/* large desktops */
+@media screen and (min-width: 1720px) and (max-width: 1920px) {
+  h3 {
+    font-size: 32px;
+  }
+}
+
+h4 {
+  margin: 0px 0px 0px 20px;
+  padding-top: 20px;
+
+  font-size: 20px;
+}
+
+
+@media (max-width: 500px) {
+    .grid h4 {
+     display: none;
+    }
+}
+
+p {
+  margin: 0px 0px 0px 20px;
+
+  width: 66%;
+
+  font-size: 20px;
+  line-height: 28px;
+}
+
+@media screen and (max-width: 500px) {
+  p {
+    width: 90%;
+  }
+}
+
+/* large desktops */
+@media screen and (min-width: 1720px) and (max-width: 1920px) {
+  p {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+p + p {
+  text-indent: 30px;
+}
+
+ul {
+  margin: 0, 20px, 0, 20px;
+  padding-bottom: 20px;
+
+  width: 66%;
+  list-style-position: outside;
+  
+  font-size: 20px;
+  line-height: 32px;
+}
+
+/* large desktops */
+@media screen and (min-width: 1720px) and (max-width: 1920px) {
+  ul {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  ul {
+    width: 90%;
+  }
+}
+
+/* FOOTER */
+h5 {
+  margin: 3px;
+
+  text-align: center;
+  width: 100%;
+
+  font-size: 12px;
+}
+
+footer {
+  padding-top: 150px;
+  padding-bottom: 50px;
+
+}
+
+/* GAMES */
+.nav-games {
+  margin-left: 20px;
+
+  color: black;
+  font-size: 14px;
+
+  text-decoration: none;
+}
+
+/* MANDALAS */
+button {
+  display: inline;
+  
+  margin-left: 20px;
+  margin-top: 10px;
+
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+
+.btn-red {
+  color: var(--color-red);
+  
+  background-color: var(--color-red);
+  border: none;
+}
+
+.btn-pink {
+  color: var(--color-pink);
+  
+  background-color: var(--color-pink);
+  border: none;
+}
+
+.btn-orange {
+  color: var(--color-orange);
+  
+  background-color: var(--color-orange);
+  border: none;
+}
+
+.btn-green {
+  color: var(--color-green);
+  
+  background-color: var(--color-green);
+  border: none;
+}
+
+.btn-blue-green {
+  color: var(--color-blue-green);
+  
+  background-color: var(--color-blue-green);
+  border: none;
+}
+
+.btn-blue {
+  color: var(--color-blue);
+  
+  background-color: var(--color-blue);
+  border: none;
+}
+
+.btn-purple {
+  color: var(--color-purple);
+  
+  background-color: var(--color-purple);
+  border: none;
+}
+
+/* FILL IN THE BLANKS */
+label {
+  display: block;
+  padding: 20px;
+}
+
+.blanks-blue {
+  padding-top: 100px;
+  padding-right: 20%;
+  padding-left: 20%;
+
+  background-color: var(--color-blue);
+
+  text-align: center;
+}
+
+.blanks-red {
+  padding-top: 100px;
+  padding-right: 20%;
+  padding-left: 20%;
+
+  background-color: var(--color-red);
+  
+  text-align: center;
+}
+
+.blanks-orange {
+  padding-top: 100px;
+  padding-right: 20%;
+  padding-left: 20%;
+
+  background-color: var(--color-orange);  
+ 
+  text-align: center;
+}
+
+.blanks-green {
+  padding-top: 100px;
+  padding-right: 20%;
+  padding-left: 20%;
+
+  background-color: var(--color-green);
+
+  text-align: center;
+
+}
+
+.blanks-pink {
+  padding-top: 100px;
+  padding-right: 20%;
+  padding-left: 20%;
+
+  background-color: var(--color-pink);
+ 
+  text-align: center;
+}
+
+.blanks-purple {
+  padding-top: 100px;
+  padding-right: 20%;
+  padding-left: 20%;
+
+  background-color: var(--color-purple);
+  
+  text-align: center;
+}
+
+/* CROSSWORDS */
+.crosswords-blue {
+  background-color: var(--color-blue);
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid var(--color-blue);
+  width: 20px;
+  height: 20px;
+
+  color: white;
+
+  text-align: center;
+}
+
+td:empty {
+  background-color: var(--color-blue);
+}
+
+/* the nr */
+sup {
+  position: absolute;
+
+  color: black;
+}

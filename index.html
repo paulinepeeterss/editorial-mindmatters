@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editorial G3</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+</head>
+
+<body>
+<div class="grid"> 
+ 
+  <div class="logo"> 
+    <img class="logo-home" src="logo.png">
+  </div>
+  
+  <a href="../editorial/depression/index.html" class="red">
+    <h2> Depression </h2>
+    <h4> <strong class ="text-effra-regular">The primary symptoms of depression revolve around sadness, a feeling of hopelessness, and mood changes.</strong></h4>
+  </a>
+  
+  <a href="../editorial/selfharm/index.html" class="orange">
+    <h2> Self-Harm </h2>
+    <h4> <strong class ="text-effra-regular">When someone hurts themselves on purpose as a way of trying to manage distressing or overwhelming feelings and experiences.</strong></h4>
+  </a>
+
+  <a href="../editorial/anorexia/index.html" class="pink">
+    <h2> Anorexia nervosa </h2>
+    <h4> <strong class ="text-effra-regular">Anorexia is officially categorized into two subtypes — the restricting type and the binge eating and purging type.</strong> </h4>
+  </a>
+  
+  <a href="../editorial/gad/index.html" class="blue">
+    <h2> GAD </h2>
+    <h4> <strong class ="text-effra-regular">Generalized Anxiety Disorder</strong></h4>
+  </a>
+
+  <a href="../editorial/ptsd/index.html" class="green">
+    <h2> PTSD </h2>
+    <h4> <strong class ="text-effra-regular">Post-Traumatic Stress Disorder</strong></h4>
+  </a>
+  
+  <a href="../editorial/bullimia/index.html"class="purple">
+    <h2> Bulimia nervosa </h2>
+    <h4> <strong class ="text-effra-regular">People with bulimia frequently eat unusually large amounts of food in a specific period of time.</strong> </h4>
+  </a>
+
+  <div class="new">
+    <h2> Next issue </h2>
+    <h4> <strong class ="text-effra-regular">Next issue coming on the first of june </strong></h4>
+  </div>
+
+  <h3> Welcome to a magazine full of resources for you and your child.<i class ="text-effra-regular"> In these issues you will find information, stories and didactic resources in order to cope with your child’s mental health.</i>
+  </br></br> Remember, you are not alone! </h3>
+</div>
+
+<script>
+  var gridTimeline = new gsap.timeline();
+  gridTimeline.from(".red",{duration: .7,delay: .01,x: 1000, opacity: 0, ease: "ease.in"}),0;
+  gridTimeline.from(".orange",{duration: .7,delay: .01,x: 1000, opacity: 0, ease: "ease.in"},0.2);
+  gridTimeline.from(".pink",{duration: .7,delay: .01,x: 1000, opacity: 0, ease: "ease.in"},0.4);
+  gridTimeline.from(".blue",{duration: .7,delay: .01,x: 1000, opacity: 0, ease: "ease.in"},0.6);
+  gridTimeline.from(".green",{duration: .7,delay: .01,x: 1000, opacity: 0, ease: "ease.in"},0.8);
+  gridTimeline.from(".purple",{duration: .7,delay: .01,x: 1000, opacity: 0, ease: "ease.in"},1);
+  gridTimeline.from(".new",{duration: .7,delay: .01,x: 1000, opacity: 0, ease: "ease.in"},1.2);
+
+  gridTimeline.from(".logo",{ x: -1000, opacity: 0, duration: 1.5,delay: .01, ease: "ease.in"},0);
+  gridTimeline.from("h3",{ x: 1000, opacity: 0, duration: 1.5,delay: .01, ease: "ease.in"},0);
+
+</script>
+
+
+
+<footer>
+  <h5> "The beginning is the best, and only, way to start. In the book of life the answers aren't on the back." </h5></br>
+  <h5> Lisa Harf - Pauline Peeters - Valentina Wiltosch  </h5>
+  <h5> &copy; 2022 Mind Matter </h5>
+</footer>
+
+</body>
+
+</html>
